@@ -1,0 +1,9 @@
+git status
+git add .
+git commit -m "Your descriptive message here"
+git push
+
+
+git add .
+git commit -m "Improved navbar design and added footer"
+git push
