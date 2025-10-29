@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-image: linear-gradient(yellow,green);
+        }
+        #child1,#child2{
+            height: 300px;
+            width: 300px;
+            border: 1px solid red ;
+            background-image: linear-gradient(to left, lightgreen,blue);
+        }
+        #P{
+            height: 500px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #p1{
+            height: 300px;
+            width: 300px;
+            background-image: linear-gradient(to top left, red , blue);
+        }
+        #p2{
+            height: 300px;
+            width: 300px;
+            background-image: radial-gradient(black,rgb(81, 255, 0));
+        }
+        #p3{
+            height: 300px;
+            width: 300px;
+            color: white;
+            background-image: conic-gradient( rgb(47, 199, 47) 25%,rgb(214, 214, 46) 25%,yellow 50%,rgb(57, 57, 223) 50%, rgb(42, 42, 220) 75%,rgb(210, 45, 45) 75%);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">Child1</div>
+        <div id="child2">Child2</div>
+    </div><br>
+    <div id="P">
+        <div id="p1"></div>
+        <div id="p2"></div>
+        <div id="p3"><p>Microsoft</p></div>
+    </div>
+</body>
+</html>
