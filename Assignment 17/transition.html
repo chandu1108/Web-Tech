@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .imgbox,img{
+            height: 230px;
+            width: 300px;
+            transition: transform 1s linear ;
+            overflow: hidden;
+        }
+        img:hover{
+            transform: scale(1.2);
+        }
+        h1{
+            background-color: aquamarine;
+            transition: color 1.5s, background-color 1.5 ;
+        }
+        h1:hover{
+            transition: all 1s linear;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgbox">
+        <img src="./immg.jpg"  alt="">
+    </div>
+    <div class="imgbox">
+        <img src="./img.jpg"  alt="">
+    </div>
+    <div class="imgbox">
+        <img src="./immg.jpg"  alt="">
+    </div>
+    <h1>Helloooooo</h1>
+</body>
+</html>
