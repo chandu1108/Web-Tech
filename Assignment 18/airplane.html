@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+        }
+        .plane img{
+            height: 400px;
+            width: 400px;
+        }
+        .plane{
+            animation: fly 3s ease 1s infinite;
+        }
+        .plane1{
+            animation: fly1 3s ease 1s infinite;
+        }
+        .plane2{
+            animation: fly2 3s ease 1s infinite;
+        }
+        @keyframes fly1{
+            0%{transform: translateY(150%);}
+            100%{transform: translateY(-105%);}
+        }
+        @keyframes fly2{
+            0%{transform: translateY(100%);}
+            100%{transform: translateY(-125%);}
+        }
+        @keyframes fly{
+            0%{transform: translateY(200%);}
+            100%{transform: translateY(-75%);}
+        }
+    </style>
+</head>
+<body>
+    <div class="plane">
+        <img src="./airplane.jpg" height="400px" width="400px" alt="">
+    </div>
+    <div class="plane1">
+        <img src="./airplane.jpg" height="400px" width="400px" alt="">
+    </div>
+    <div class="plane2">
+        <img src="./airplane.jpg" height="400px" width="400px" alt="">
+    </div>
+</body>
+</html>
