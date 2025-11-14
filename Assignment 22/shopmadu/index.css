@@ -55,7 +55,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-image: url(./Images/banner.jpg);
+            background-image: url(./banner.jpg);
             background-repeat: no-repeat;
             background-size: cover;
         }
