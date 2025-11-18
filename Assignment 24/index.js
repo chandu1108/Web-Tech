@@ -16,3 +16,7 @@ console.log(-1/0)
 let p=99999999999n
 let ph=BigInt(34567898765)
 console.log(typeof(ph))
+
+let g=false
+g=true
+console.log(g)
