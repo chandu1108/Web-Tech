@@ -1,1 +1,1 @@
-console.log(Boolean(""))
+console.log("abc"-5)
