@@ -22,5 +22,6 @@ switch(today){
 
     console.log(`Total Amount: ${totalamount} Rs`)
     console.log(`Final Amount to Pay: ${finalamount} Rs`)
+    console.log("Thank You Visit Again:)")
     
     
