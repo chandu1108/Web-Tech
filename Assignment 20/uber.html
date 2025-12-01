@@ -55,6 +55,11 @@
         align-items: center;
         height: 250px;
         width: 350px;
+        transition: transform 1s ease;
+      }
+
+      .image:hover{
+        transform: translateX(15px);
       }
       input{
         border-radius: 8px;
@@ -63,6 +68,7 @@
         height: 30px;
         width: 220px;
       }
+
       
     </style>
   </head>
@@ -79,10 +85,11 @@
         </div>
         <div style="text-align: center;">
             <input
+            id="bike"
           type="text"
           placeholder="Enter KM"
         /><br />
-        <button>Book now</button>
+        <button onclick="bike()">Book now</button>
         </div>
       </div>
 
@@ -92,10 +99,11 @@
         </div>
         <div style="text-align: center;">
             <input
+            id="auto"
           type="text"
           placeholder="Enter KM"
         /><br />
-        <button>Book now</button>
+        <button onclick="auto()">Book now</button>
         </div>
       </div>
 
@@ -105,14 +113,28 @@
         </div>
         <div style="text-align: center;">
             <input
+            id="car"
           type="text"
           placeholder="Enter KM"
         /><br />
-        <button>Book now</button>
+        <button onclick="car()">Book now</button>
         </div>
       </div>
-
     </div>
-    chatgpt
+    <script>
+      function auto(){
+        let km=document.getElementById("auto").value
+        let price=24
+        alert(km*price)
+      }
+      function bike(){
+        let km=document.getElementById("bike").value
+        alert(km*20)
+      }
+      function car(){
+        let km=document.getElementById("car").value
+        alert(km*50)
+      }
+    </script>
   </body>
 </html>
