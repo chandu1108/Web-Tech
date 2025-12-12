@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Modifying the Object
+        let user={
+            name:"Chandan",
+            age:20,
+            city:"Mysuru"
+        }
+        //updating
+        user.age=21
+        //Adding
+        user.gender="Male"
+        //Deleting
+        delete user.city
+        console.log(user)
+
+        //Methods in object
+        //keys
+        console.log(Object.keys(user))
+        //values
+        console.log(Object.values(user))
+        //keys and values
+        console.log(Object.entries(user))
+
+        //Object Sealing and Freezing
+        //Sealing
+        Object.seal(user)
+        user.age=22
+        user.dob="11/04/2004"//not possible
+        delete user.city//not possible
+        console.log(user)
+        console.log(Object.isSealed(user))
+
+        //Freezing
+        Object.freeze(user)
+        user.age=23//not possible
+        console.log(user)
+        console.log(Object.isFrozen(user))
+
+    </script>
+</body>
+</html>
